@@ -1,0 +1,7 @@
+num1=input("enter first number: ")
+num2=input("enter second number: ")
+num3=input("enter third number: ")
+num4=input("enter fourth number: ")
+num5=input("enter fifth number: ")
+num6=int(num1) * int(num2) * int(num3) * int(num4) // int(num5)
+print(num6)
