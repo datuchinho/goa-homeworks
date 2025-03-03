@@ -7,5 +7,8 @@ for char in word:
           res += char
 
 print(res)
+
+
+
     
     

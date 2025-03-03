@@ -3,5 +3,5 @@ num1 = int(input("enter first number: "))
 
 if num1%2 == 0:
     print("luwia")
-elif num1%2 == 0:
+else :
       print("kentia")

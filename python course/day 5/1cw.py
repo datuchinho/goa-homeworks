@@ -1,4 +1,4 @@
 name = input("sheiyvanet saxeli: ")
 
-for letter in name:
-    print(letter)
+for letter1 in name:
+    print(letter1)
