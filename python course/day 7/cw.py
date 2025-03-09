@@ -20,11 +20,6 @@ for i in range(0,100):
 for i in range(250,490,10):
     print(i)
 
-#5
 
-word = input("შეიყვანეთ სიტყვა: ")
 
-if word.startswith("D"):
-    print(True)
-else:
-    print(False)
+
