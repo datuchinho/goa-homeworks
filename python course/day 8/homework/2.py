@@ -13,7 +13,7 @@ while True:
             print("gilocavt sworia! 🎉")
             break
         elif guess < secret_number:
-            print("dabalia scadet ufro magali!")
+            print("dabalia scadet ufro magali! ricxvi")
         else:
             print("magalia scadet ufro dabali ricxvi!")
         
