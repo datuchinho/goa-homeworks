@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOA - Goal Oriented Academy</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <button onclick="toggleSidebar()" class="close-btn">X</button>
+        <a href="gw.htm" class="button">Go to Introduction</a>
+        <a href="gw2.htm" class="button">Watch Video Again</a>
+        <a href="gw3.htm" class="button">Go to Main Page</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Welcome to GOA - Goal Oriented Academy</h1>
+        <p>Welcome to GOA, a place dedicated to helping students achieve their goals in the world of IT. The academy offers various courses to sharpen your skills in programming, development, and more!</p>
+        <p>If you're ready to learn more, we encourage you to explore the academy and discover everything GOA has to offer!</p>
+        <a href="gw2.htm" class="button">Watch Introduction Video Again</a>
+        <a href="#" class="button">Get to Know GOA Better</a> <!-- Placeholder link for now -->
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+    <button onclick="toggleSidebar()" class="sidebar-toggle-btn">Menu</button>
+</body>
+</html>
