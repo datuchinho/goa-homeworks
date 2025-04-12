@@ -1,0 +1,218 @@
+@import url("https://cdn.web-fonts.ge/fonts/bpg-extrasquare/css/bpg-extrasquare.min.css");
+@import url("https://cdn.web-fonts.ge/fonts/bpg-extrasquare-mtavruli/css/bpg-extrasquare-mtavruli.min.css");
+@import url("//cdn.web-fonts.ge/fonts/mg-bitneon/css/mg-bitneon.min.css");
+
+
+:root {
+    --primary: #00400d;
+    --secodary: #004d0f;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #000301;
+    background-image: linear-gradient(#010a02 1px, transparent 1px), linear-gradient(to right, #010a02 1px, #000301 1px);
+    background-size: 80px 80px;
+}
+
+
+/* ===== CONTAINER CSS | MADE BY JOJUA.NET ===== */
+.container {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 90%;
+}
+
+
+
+
+
+/* ===== HEADER CSS | MADE BY JOJUA.NET ===== */
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #000301;
+    border-bottom: 0.5px solid #010a02;
+    z-index: 99;
+}
+
+header.header>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.header>.container>.h-logo {
+    font-family: "MG BitNeon", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+header.header>.container>.h-logo>span {
+    font-family: "MG BitNeon", sans-serif;
+    font-size: 18px;
+    color: var(--primary);
+    text-shadow: 0px 0px 5px var(--primary);
+}
+
+
+header.header>.container>nav>ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+header.header>.container>nav>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+header.header>.container>nav>ul>li>a:hover {
+    color: var(--primary);
+    text-shadow: 0px 0px 5px var(--primary);
+}
+
+
+
+
+
+/* ===== SECTION CSS | MADE BY JOJUA.NET ===== */
+section.section {
+    position: relative;
+    margin-top: 100px;
+}
+
+section.section>.container>.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.section>.container>.section-header>.section-title {
+    position: relative;
+    font-family: "MG BitNeon", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+section.section>.container>.section-header>.section-title>span {
+    font-family: "MG BitNeon", sans-serif;
+    color: var(--primary);
+    text-shadow: 0px 0px 3px var(--primary);
+}
+
+section.section>.container>.section-header>a {
+    font-family: "MG BitNeon", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+section.section>.container>.section-content {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 20px;
+}
+
+.section-card {
+    border: 1px solid var(--primary);
+}
+
+
+
+
+
+
+/* ===== FOOTER CSS | MADE BY JOJUA.NET ===== */
+footer.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-color: #000301;
+    border-top: 0.5px solid #010a02;
+}
+
+footer.footer>.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+footer.footer>.container>nav>ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+footer.footer>.container>nav>ul>li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/* ===== WEBKIT & SELECTION CSS | MADE BY JOJUA.NET ===== */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::selection {
+    color: #fff;
+    background-color: var(--primary);
+}
+
+
+
+
+/* ===== FONTS CSS | MADE BY JOJUA.NET ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+button,
+label,
+.btn {
+    font-family: 'BPG ExtraSquare Mtavruli', sans-serif;
+    font-weight: normal;
+}
+
+p,
+input {
+    font-family: 'BPG ExtraSquare', sans-serif;
+    font-weight: normal;
+}
