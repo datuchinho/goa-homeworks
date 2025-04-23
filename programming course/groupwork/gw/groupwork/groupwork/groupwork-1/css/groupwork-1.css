@@ -1,0 +1,370 @@
+@import url("https://cdn.web-fonts.ge/fonts/bpg-extrasquare/css/bpg-extrasquare.min.css");
+@import url("https://cdn.web-fonts.ge/fonts/bpg-extrasquare-mtavruli/css/bpg-extrasquare-mtavruli.min.css");
+@import url("//cdn.web-fonts.ge/fonts/mg-bitneon/css/mg-bitneon.min.css");
+
+
+:root {
+    --primary: #00400d;
+    --secodary: #004d0f;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #000301;
+    background-image: linear-gradient(#010a02 1px, transparent 1px), linear-gradient(to right, #010a02 1px, #000301 1px);
+    background-size: 80px 80px;
+}
+
+
+/* ===== CONTAINER CSS | MADE BY JOJUA.NET ===== */
+.container {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 90%;
+}
+
+
+
+
+
+/* ===== HEADER CSS | MADE BY JOJUA.NET ===== */
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #000301;
+    border-bottom: 0.5px solid #010a02;
+    z-index: 99;
+}
+
+header.header>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.header>.container>.h-logo {
+    font-family: "MG BitNeon", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+header.header>.container>.h-logo>span {
+    font-family: "MG BitNeon", sans-serif;
+    font-size: 18px;
+    color: var(--primary);
+    text-shadow: 0px 0px 5px var(--primary);
+}
+
+
+header.header>.container>nav>ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+header.header>.container>nav>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0px 0px 0px #fff;
+}
+
+header.header>.container>nav>ul>li>a:hover {
+    color: var(--primary);
+    text-shadow: 0px 0px 5px var(--primary);
+}
+
+
+#menu-icon {
+    font-size: 32px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 833px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #000301;
+        padding: 20px 0;
+        display: none;
+        transition: 0.3s ease;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+/* ===== SECTION CSS | MADE BY JOJUA.NET ===== */
+section.section {
+    position: relative;
+    margin-top: 100px;
+}
+
+section.section>.container>.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.section>.container>.section-header>.section-title {
+    position: relative;
+    font-family: "MG BitNeon", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+section.section>.container>.section-header>.section-title>span {
+    font-family: "MG BitNeon", sans-serif;
+    color: var(--primary);
+    text-shadow: 0px 0px 3px var(--primary);
+}
+
+section.section>.container>.section-header>a {
+    font-family: "MG BitNeon", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+section.section>.container>.section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+
+section.section>.container>p{
+    font-family: 'BPG ExtraSquare', sans-serif;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.section-card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border: 3px solid var(--primary);
+    box-shadow: 0px 0px 5px var(--primary);
+    border-radius: 5px;
+}
+
+.section-card>.section-img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+}
+
+.section-card>.section-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px var(--primary);
+}
+
+.section-card>.section-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+}
+
+.section-card>.section-body>span {
+    font-size: 20px;
+    text-shadow: 0px 0px 2px #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.section-card>.section-body>a {
+    padding: 8px;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary);
+    box-shadow: 0px 0px 5px var(--primary);
+    /*text-shadow: 0px 0px 2px #fff;*/
+    text-align: center;
+    border-radius: 5px;
+}
+
+.section-card>.section-body>a:hover {
+    background-color: var(--secodary);
+    box-shadow: 0px 0px 5px var(--secodary);
+}
+
+.section-card-soc {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border: 3px solid var(--primary);
+    box-shadow: 0px 0px 5px var(--primary);
+    border-radius: 5px;
+}
+
+
+.section-card-soc>.section-social-card {
+    font-family: "MG BitNeon", sans-serif;
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--primary);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 3px var(--primary);
+}
+
+.section-card-soc.facebook {
+    border: 3px solid #3b5998;
+    box-shadow: 0px 0px 5px #3b5998;
+}
+
+.section-card-soc.facebook>.section-social-card {
+    color: #3b5998;
+}
+
+.section-card-soc.instagram {
+    border: 3px solid;
+    border-image: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) 1;
+    box-shadow: 0px 0px 5px #feda75;
+}
+
+.section-card-soc.instagram>.section-social-card {
+    color: #feda75;
+}
+
+.section-card-soc.tiktok {
+    border: 3px solid #25F4EE;
+    box-shadow: 0px 0px 5px #25F4EE;
+}
+
+.section-card-soc.tiktok>.section-social-card {
+    color: #FFFFFF;
+}
+
+.section-card-soc.youtube {
+    border: 3px solid #FF0000;
+    box-shadow: 0px 0px 5px #FF0000   ;
+}
+
+.section-card-soc.youtube>.section-social-card {
+    color: #FF0000;
+}
+
+
+
+/* ===== FOOTER CSS | MADE BY JOJUA.NET ===== */
+footer.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-color: #000301;
+    border-top: 0.5px solid #010a02;
+}
+
+footer.footer>.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+footer.footer>.container>nav>ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+footer.footer>.container>nav>ul>li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/* ===== WEBKIT & SELECTION CSS | MADE BY JOJUA.NET ===== */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::selection {
+    color: #fff;
+    background-color: var(--primary);
+}
+
+
+
+
+/* ===== FONTS CSS | MADE BY JOJUA.NET ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+button,
+label,
+.btn {
+    font-family: 'BPG ExtraSquare Mtavruli', sans-serif;
+    font-weight: normal;
+}
+
+p,
+input {
+    font-family: 'BPG ExtraSquare', sans-serif;
+    font-weight: normal;
+}
