@@ -1,5 +1,6 @@
 @echo off
-cd /d "C:\Users\PC\Desktop\goa programing"
+cd "C:\Users\PC\Desktop\goa programing"
 git add .
-git commit -m "Auto commit message"
+git commit -m "Auto commit from batch file"
 git push origin main
+pause

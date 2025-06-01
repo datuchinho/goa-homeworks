@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Internal სტილი იწერება <style> ტეგში, <head> ნაწილში -->
+  <style>
+    .internal {
+      color: blue;
+      font-size: 18px;
+    }
+  </style>
+
+  <!-- External სტილი ერთდება <link> ტეგით, რომელიც მიუთითებს ცალკე CSS ფაილს -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Inline სტილი იწერება უშუალოდ HTML ელემენტში style="" ატრიბუტის საშუალებით -->
+  <p style="color: red;">ეს არის Inline სტილით გასტილული პარაგრაფი.</p>
+
+  <!-- Internal სტილის გამოსაყენებლად ვიყენებთ class ატრიბუტს, 
+       რომლის მნიშვნელობა ემთხვევა <style> ტეგში განსაზღვრულ კლასს -->
+  <p class="internal">ეს არის Internal სტილით გასტილული პარაგრაფი.</p>
+
+  <!-- External სტილის გამოსაყენებლადაც ვიყენებთ class ატრიბუტს,
+       მაგრამ სტილი განსაზღვრულია ცალკე ფაილში (style.css) -->
+  <p class="external">ეს არის External სტილით გასტილული პარაგრაფი.</p>
+
+</body>
+</html>
