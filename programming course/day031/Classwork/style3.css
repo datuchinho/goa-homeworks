@@ -1,0 +1,11 @@
+.inside-list {
+  list-style-type: square;
+  list-style-position: inside;
+  color: darkgreen;
+}
+
+.outside-list {
+  list-style-type: circle;
+  list-style-position: outside;
+  color: darkblue;
+}

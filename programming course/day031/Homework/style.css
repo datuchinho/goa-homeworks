@@ -1,0 +1,14 @@
+.Atag {
+    color: orange;
+
+} 
+.Atag:hover {
+    color: rgb(3, 7, 230);
+
+}
+
+.Atag:active   {
+    color: rgb(255, 0, 0);
+
+}
+

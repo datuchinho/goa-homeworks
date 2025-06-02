@@ -1,0 +1,17 @@
+.link#link {
+    display: inline-block; /* needed for width/height to apply */
+    width: 85px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    text-decoration: none;
+    transition: width 0.3s ease;
+    overflow: hidden; /* hide overflow when shrinking */
+    white-space: nowrap; /* keep text in one line */
+}
+
+.link#link:hover {
+    width: 180px;
+}
