@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qatar Airways Gallery</title>
+  <link rel="stylesheet" href="main.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  
+  <header>
+    <div class="header-left">
+      <img class="logo" src="logo.png" alt="Qatar Airways Logo"/>
+      <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Destinations</a>
+        <a href="#">Services</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="#" class="btn">Sign Up</a>
+      <a href="#" class="btn">Log In</a>
+    </div>
+  </header>
+
+
+
+  <main>
+    <section class="hero-image">
+      <div class="overlay">
+        <h1>Explore the World with Qatar Airways</h1>
+      </div>
+      <img src="Daco_4374739.png" alt="Hero Image"/>
+    </section>
+
+    <section class="promo">
+      <div class="left">
+        <h1>Experience the World<br>with Qatar Airways</h1>
+      </div>
+      <div class="right">
+        <p>Join us for an unforgettable journey across the globe. Discover exceptional service and comfort with every flight.</p>
+        <div class="actions">
+          <button class="primary-btn">Book</button>
+          <button class="primary-btn">Explore</button>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="sectiony fade-in">
+      <h2 class="sectiony-title">Choose Your Travel Class</h2>
+      <div class="classy-container">
+        <div class="cardy">
+          <img src="./first class.jpg" alt="First Class">
+          <div class="cardy-content">
+            <div class="cardy-title">First Class</div>
+            <a href="#" class="linky">Explore Luxury Travel</a>
+          </div>
+        </div>
+        <div class="cardy">
+          <img src="./business.jpg" alt="Business Class">
+          <div class="cardy-content">
+            <div class="cardy-title">Business Class</div>
+            <a href="#" class="linky">Explore Business Comfort</a>
+          </div>
+        </div>
+        <div class="cardy">
+          <img src="./economy.jpg" alt="Economy Class">
+          <div class="cardy-content">
+            <div class="cardy-title">Economy Class</div>
+            <a href="#" class="linky">Explore Smart Travel</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in">
+      <h2 class="section-title">Explore Top Destinations</h2>
+      <div class="grid-container">
+        <div class="card" onclick="openModal(this)">
+          <img src="./kochi.jpg" alt="Kochi">
+          <div class="card-content">
+            <div class="card-title">Kochi</div>
+            <p class="card-description">A scenic port city in India, known for its backwaters, colonial architecture, and vibrant spice markets.</p>
+          </div>
+        </div>
+        
+        
+
+            <div class="card">
+      <img src="./bali.jpg" />
+      <div class="card-content">
+        <div class="card-title">Bali</div>
+        <p class="card-description">An Indonesian island paradise offering stunning beaches, lush rice terraces, and rich Hindu culture.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./phem.jpg" />
+      <div class="card-content">
+        <div class="card-title">Phnom penh</div>
+        <p class="card-description">Cambodia’s lively capital, blending French colonial charm with deep historical roots and modern energy.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./siem.jpg" />
+      <div class="card-content">
+        <div class="card-title">Siem Reap (Angkor)</div>
+        <p class="card-description">Home to the awe-inspiring Angkor Wat temples and a gateway to Cambodia’s ancient Khmer heritage.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./singapore.jpg" />
+      <div class="card-content">
+        <div class="card-title">Singapore</div>
+        <p class="card-description">A sleek, multicultural city-state famed for its futuristic skyline, clean streets, and delicious street food.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./shanghai.jpg" />
+      <div class="card-content">
+        <div class="card-title">Shanghai</div>
+        <p class="card-description">China’s buzzing metropolis where historic neighborhoods meet cutting-edge skyscrapers and global commerce.</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <img src="./dehli.jpg" />
+      <div class="card-content">
+        <div class="card-title">Dehli</div>
+        <p class="card-description">India’s capital, Delhi blends historic landmarks with modern city life and vibrant culture.</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <img src="./kuala.jpg" />
+      <div class="card-content">
+        <div class="card-title">Kuala Lumpur</div>
+        <p class="card-description">Home to the awe-inspiring Angkor Wat temples and a gateway to Cambodia’s ancient Khmer heritage.</p>
+      </div>
+    </div>
+
+
+  </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+<section class="gallery-section">
+  <h2 class="gal">Travel Gallery</h2>
+  <div class="gallery-toggle">
+    <button onclick="toggleGallery('scenic')">Scenic</button>
+    <button onclick="toggleGallery('cultural')">Cultural</button>
+  </div>
+
+
+
+
+  <div class="gallery-wrapper">
+    <div class="gallery-container" id="scenic-gallery">
+      <img src="./kuala.jpg" alt="Scenic 1">
+      <img src="./shanghai.jpg" alt="Scenic 2">
+      <img src="./singapore.jpg" alt="Scenic 3">
+      <img src="./bali.jpg" alt="Scenic 4">
+    </div>
+
+
+
+
+    <div class="gallery-container" id="cultural-gallery">
+      <img src="./dehli.jpg" alt="Cultural 1">
+      <img src="./siem.jpg" alt="Cultural 2">
+      <img src="./phem.jpg" alt="Cultural 3">
+      <img src="./kochi.jpg" alt="Cultural 4">
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleGallery(type) {
+    const scenic = document.getElementById('scenic-gallery');
+    const cultural = document.getElementById('cultural-gallery');
+
+    if (type === 'scenic') {
+      scenic.style.opacity = 1;
+      scenic.style.zIndex = 1;
+      cultural.style.opacity = 0;
+      cultural.style.zIndex = 0;
+    } else {
+      scenic.style.opacity = 0;
+      scenic.style.zIndex = 0;
+      cultural.style.opacity = 1;
+      cultural.style.zIndex = 1;
+    }
+  }
+</script>
+
+
+
+<style>
+
+.gal {
+  margin-bottom: 30px;
+}
+
+.gallery-section {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.gallery-toggle button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #692c46;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gallery-wrapper {
+  position: relative;
+  height: auto;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+#scenic-gallery {
+  opacity: 1;
+  z-index: 1;
+}
+
+.gallery-container img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.gallery-label {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer" style="margin-top: 300px;">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>Qatar Airways</h3>
+        <p>Experience world-class service and hospitality with Qatar Airways.</p>
+      </div>
+
+
+
+      <div class="footer-section links">
+
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Book a Flight</a></li>
+          <li><a href="#">Manage Booking</a></li>
+          <li><a href="#">Flight Status</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Website">🌐</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="Instagram">📸</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Qatar Airways. All rights reserved.
+    </div>
+  </footer>
+
+
+</body>
+</html>
